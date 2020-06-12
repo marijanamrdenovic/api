@@ -9,14 +9,7 @@ Composer, qui est utilisé pour installer les packages PHP.
 ## Les étapes à suivre :
 
 
-### 1 Composer :
-
-```bash
-composer install
-
-```
-
-### 2 Configuration de base de données :
+### 1 Configuration de base de données :
 
 Les paramètres de la connexion à la base de donne sont stockées dans la variable DATABASE_URL qui existe dans la fichier .env.
     Exemple:
@@ -29,9 +22,10 @@ Les paramètres de la connexion à la base de donne sont stockées dans la varia
     db_name: 'recettes_cuisine'
 ```
 
-### 3 Commandes à lancer : 
+### 2 Commandes à lancer : 
 
 ```bash
+composer install
   
 php bin/console doctrine:database:create
 
@@ -40,7 +34,7 @@ php bin/console doctrine:migrations:migrate
 php bin/console server:run 
 ```
 
-### 4 Pour réaliser les test nos allons utiliser Postman 
+### 3 Pour réaliser les test nos allons utiliser Postman 
 
 https://www.postman.com/
 
