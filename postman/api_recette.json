@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "7052292d-ee34-44ec-9a9b-6184117fa99b",
+		"name": "API RECETTE",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get list recette by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/recettes/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"recettes",
+						"1"
+					]
+				},
+				"description": "Get recette by id"
+			},
+			"response": []
+		},
+		{
+			"name": "Get list all recette",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/recettes/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"recettes",
+						""
+					]
+				},
+				"description": "Get List all recette"
+			},
+			"response": []
+		},
+		{
+			"name": "Create recette",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titre\": \"Chopper-Milkshake\",\n\t\"sous_titre\": \"MilkShake\",\n    \"liste_ingredients\": \"1l de lait,2 pommes\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/recettes/add",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"recettes",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update recette",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titre\": \"Chopper-Milkshake\",\n\t\"sous_titre\": \"MilkShake\",\n    \"liste_ingredients\": \"1l de lait,2 pommes\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/recettes/update/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"recettes",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete recette by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{url}}/recettes/delete/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"recettes",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
