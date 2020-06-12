@@ -24,9 +24,9 @@ Les paramètres de la connexion à la base de donne sont stockées dans la varia
 ```bash
 
     DATABASE_URL='mysql://db_user:db_password@127.0.0.1:3306/db_name'
-    db_user: root
-    db_password: root
-    db_name: nom de votre base par exemple 'recettes_cuisine'
+    db_user: 'root'
+    db_password: 'root'
+    db_name: 'recettes_cuisine'
 ```
 
 ### 3 Commandes à lancer : 
