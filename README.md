@@ -38,15 +38,15 @@ php bin/console server:run
 
 https://www.postman.com/
 
-Importer la collection depuis le dossier postman/api_recette.JSON
+#### Importer la collection depuis le dossier postman/api_recette.JSON
 
 
-## POST — Create
+### POST — Create
 Votre demande POST devrait ressembler à ceci:
 
 http://127.0.0.1:8000/recettes/add
 
-### Les champs obligatoires sont titre et liste_ingredients.
+#### Les champs obligatoires sont titre et liste_ingredients.
 
 Exemple des données à saisir en JSON :
 
@@ -58,7 +58,7 @@ Exemple des données à saisir en JSON :
 }
 ```
 
-## GET — Read
+### GET — Read
 Votre demande GET de toutes les recettes devrait ressembler à ceci:
 
 http://127.0.0.1:8000/recettes/
@@ -68,7 +68,7 @@ Votre demande GET d'une recette devrait ressembler à ceci:
 http://127.0.0.1:8000/recettes/1
 
 
-## PUT — Update
+### PUT — Update
 Votre demande PUT devrait ressembler à ceci:
 
 http://127.0.0.1:8000/recettes/update/1
@@ -83,7 +83,7 @@ Exemple des données à saisir en JSON :
 }
 ```
 
-## DELETE — Delete
+### DELETE — Delete
 Votre demande DELETE devrait ressembler à ceci:
 
 http://127.0.0.1:8000/recettes/delete/1
